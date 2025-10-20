@@ -1,0 +1,10 @@
+
+How GitHub Actions builds HitoVox (Windows):
+
+- The workflow checks out the repo with submodules.
+- It expects JUCE to be available at ./JUCE (submodule).
+- It configures CMake with Visual Studio 2022 and builds Release.
+- NSIS is installed via Chocolatey on the runner and used to make the installer.
+- Artifacts (the .vst3 and HitoVox-Installer.exe) are uploaded to the workflow run.
+
+If you want me to push this repo to your GitHub account and trigger the workflow, I can prepare the final ZIP for upload and guide you step-by-step.
